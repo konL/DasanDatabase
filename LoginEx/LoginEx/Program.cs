@@ -15,7 +15,7 @@ namespace LoginEx
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_MD());
+            Application.Run(new FrmSp());
         }
     }
 }

@@ -76,7 +76,7 @@ namespace LoginEx
             else if ("21".Equals(LoginInfo.Qx))
             {
                 //采购部普通员工
-                MnuFz.Enabled = false;
+                //MnuFz.Enabled = false;
                 MnuXs.Enabled = false;
                 MnuXt.Enabled = false;
                 MnuKc.Enabled = false;
@@ -84,7 +84,7 @@ namespace LoginEx
             else if ("31".Equals(LoginInfo.Qx))
             {
                 //销售部普通员工}
-                MnuFz.Enabled = false;
+                //MnuFz.Enabled = false;
                 MnuJh.Enabled = false;
                 MnuXt.Enabled = false;
                 MnuKc.Enabled = false;
@@ -99,6 +99,31 @@ namespace LoginEx
         {
             FrmZG fmzg = new FrmZG();
             fmzg.Show();
+        }
+
+        private void MnuBm_Click(object sender, EventArgs e)
+        {
+            FrmBm fmBm = new FrmBm();
+            fmBm.Show();
+
+        }
+
+        private void MnuZy_Click(object sender, EventArgs e)
+        {
+            FrmZy fmZy = new FrmZy();
+            fmZy.Show();
+        }
+
+        private void MnuKhCys_Click(object sender, EventArgs e)
+        {
+            FrmKhGys fmKhGys = new FrmKhGys();
+            fmKhGys.Show();
+        }
+
+        private void MnuSp_Click(object sender, EventArgs e)
+        {
+            FrmSp fmSp = new FrmSp();
+            fmSp.Show();
         }
     }
 }

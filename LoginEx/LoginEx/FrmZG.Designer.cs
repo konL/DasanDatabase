@@ -79,6 +79,7 @@
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.bhMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             xmLabel = new System.Windows.Forms.Label();
             xbLabel = new System.Windows.Forms.Label();
             csrqLabel = new System.Windows.Forms.Label();
@@ -200,6 +201,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.t_bmTableAdapter = null;
+            this.tableAdapterManager.t_zg1TableAdapter = null;
             this.tableAdapterManager.t_zgTableAdapter = this.t_zgTableAdapter;
             this.tableAdapterManager.t_zyTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LoginEx.zgzyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -505,11 +507,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(600, 333);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "专业明细";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FrmZG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(957, 385);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bhMaskedTextBox);
             this.Controls.Add(bmbhLabel);
@@ -592,5 +605,6 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.MaskedTextBox bhMaskedTextBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

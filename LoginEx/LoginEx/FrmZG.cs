@@ -38,8 +38,25 @@ namespace LoginEx
             this.t_bmTableAdapter.Fill(this.zgzyDataSet.t_bm);
             // TODO: 这行代码将数据加载到表“zgzyDataSet.t_zy”中。您可以根据需要移动或删除它。
             this.t_zyTableAdapter.Fill(this.zgzyDataSet.t_zy);
-            // TODO: 这行代码将数据加载到表“zgzyDataSet.t_zg”中。您可以根据需要移动或删除它。
-            this.t_zgTableAdapter.Fill(this.zgzyDataSet.t_zg);
+          
+
+            //根据权限查询
+            //0管理员===所有职工信息
+            //其他人`只能看到自己的
+            if ("0".Equals(LoginInfo.Qx)) {
+
+                // TODO: 这行代码将数据加载到表“zgzyDataSet.t_zg”中。您可以根据需要移动或删除它。
+                //.Fill填充(src:this.zgzyDataSet.t_zg
+                this.t_zgTableAdapter.Fill(this.zgzyDataSet.t_zg);
+            }else {
+               
+                this.t_zgTableAdapter.FillBybh(this.zgzyDataSet.t_zg,LoginInfo.Bh);
+                //功能不可用
+                bindingNavigatorAddNewItem.Enabled = false;
+                bindingNavigatorDeleteItem.Enabled = false;
+                bhMaskedTextBox.Enabled = false;
+            
+            }
 
         }
 
@@ -126,6 +143,12 @@ namespace LoginEx
         private void button1_Click(object sender, EventArgs e)
         {
             Frm_SearchByZymc fm = new Frm_SearchByZymc();
+            fm.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Frm_MD fm = new Frm_MD();
             fm.Show();
         }
     }

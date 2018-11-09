@@ -35,28 +35,28 @@
             this.tslb_time = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.MnuFz = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuJh = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuXs = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuKc = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuXt = new System.Windows.Forms.ToolStripMenuItem();
-            this.Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuZg = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuBm = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuZy = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuKhCys = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSp = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuJh = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuJhLr = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuJhCxTj = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuXs = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuXsLr = new System.Windows.Forms.ToolStripMenuItem();
             this.MnyXsCxTj = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuKc = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuKcCxTj = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuCxBj = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuXt = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSzSjk = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSzQx = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSzKl = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSzCs = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSjkBf = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuSjkHf = new System.Windows.Forms.ToolStripMenuItem();
+            this.Exit = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -86,9 +86,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslb_name,
             this.tslb_time});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 273);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 288);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(717, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(605, 22);
             this.statusStrip1.TabIndex = 4;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -115,7 +115,7 @@
             this.Exit});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(717, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(605, 25);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -131,53 +131,6 @@
             this.MnuFz.Size = new System.Drawing.Size(98, 21);
             this.MnuFz.Text = "辅助管理（&F）";
             // 
-            // MnuJh
-            // 
-            this.MnuJh.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuJhLr,
-            this.MnuJhCxTj});
-            this.MnuJh.Name = "MnuJh";
-            this.MnuJh.Size = new System.Drawing.Size(97, 21);
-            this.MnuJh.Text = "进货管理（&J）";
-            // 
-            // MnuXs
-            // 
-            this.MnuXs.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuXsLr,
-            this.MnyXsCxTj});
-            this.MnuXs.Name = "MnuXs";
-            this.MnuXs.Size = new System.Drawing.Size(100, 21);
-            this.MnuXs.Text = "销售管理（&X）";
-            // 
-            // MnuKc
-            // 
-            this.MnuKc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuKcCxTj,
-            this.MnuCxBj});
-            this.MnuKc.Name = "MnuKc";
-            this.MnuKc.Size = new System.Drawing.Size(100, 21);
-            this.MnuKc.Text = "库存管理（&K）";
-            // 
-            // MnuXt
-            // 
-            this.MnuXt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MnuSzSjk,
-            this.MnuSzQx,
-            this.MnuSzKl,
-            this.MnuSzCs,
-            this.MnuSjkBf,
-            this.MnuSjkHf});
-            this.MnuXt.Name = "MnuXt";
-            this.MnuXt.Size = new System.Drawing.Size(99, 21);
-            this.MnuXt.Text = "系统管理（&S）";
-            // 
-            // Exit
-            // 
-            this.Exit.Name = "Exit";
-            this.Exit.Size = new System.Drawing.Size(75, 21);
-            this.Exit.Text = "退出（&T）";
-            this.Exit.Click += new System.EventHandler(this.Exit_Click);
-            // 
             // MnuZg
             // 
             this.MnuZg.Name = "MnuZg";
@@ -190,24 +143,37 @@
             this.MnuBm.Name = "MnuBm";
             this.MnuBm.Size = new System.Drawing.Size(172, 22);
             this.MnuBm.Text = "部门管理";
+            this.MnuBm.Click += new System.EventHandler(this.MnuBm_Click);
             // 
             // MnuZy
             // 
             this.MnuZy.Name = "MnuZy";
             this.MnuZy.Size = new System.Drawing.Size(172, 22);
             this.MnuZy.Text = "专业管理";
+            this.MnuZy.Click += new System.EventHandler(this.MnuZy_Click);
             // 
             // MnuKhCys
             // 
             this.MnuKhCys.Name = "MnuKhCys";
             this.MnuKhCys.Size = new System.Drawing.Size(172, 22);
             this.MnuKhCys.Text = "客户与供应商管理";
+            this.MnuKhCys.Click += new System.EventHandler(this.MnuKhCys_Click);
             // 
             // MnuSp
             // 
             this.MnuSp.Name = "MnuSp";
             this.MnuSp.Size = new System.Drawing.Size(172, 22);
             this.MnuSp.Text = "商品管理";
+            this.MnuSp.Click += new System.EventHandler(this.MnuSp_Click);
+            // 
+            // MnuJh
+            // 
+            this.MnuJh.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuJhLr,
+            this.MnuJhCxTj});
+            this.MnuJh.Name = "MnuJh";
+            this.MnuJh.Size = new System.Drawing.Size(97, 21);
+            this.MnuJh.Text = "进货管理（&J）";
             // 
             // MnuJhLr
             // 
@@ -221,6 +187,15 @@
             this.MnuJhCxTj.Size = new System.Drawing.Size(160, 22);
             this.MnuJhCxTj.Text = "进货查询与统计";
             // 
+            // MnuXs
+            // 
+            this.MnuXs.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuXsLr,
+            this.MnyXsCxTj});
+            this.MnuXs.Name = "MnuXs";
+            this.MnuXs.Size = new System.Drawing.Size(100, 21);
+            this.MnuXs.Text = "销售管理（&X）";
+            // 
             // MnuXsLr
             // 
             this.MnuXsLr.Name = "MnuXsLr";
@@ -233,6 +208,15 @@
             this.MnyXsCxTj.Size = new System.Drawing.Size(160, 22);
             this.MnyXsCxTj.Text = "销售查询与统计";
             // 
+            // MnuKc
+            // 
+            this.MnuKc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuKcCxTj,
+            this.MnuCxBj});
+            this.MnuKc.Name = "MnuKc";
+            this.MnuKc.Size = new System.Drawing.Size(100, 21);
+            this.MnuKc.Text = "库存管理（&K）";
+            // 
             // MnuKcCxTj
             // 
             this.MnuKcCxTj.Name = "MnuKcCxTj";
@@ -244,6 +228,19 @@
             this.MnuCxBj.Name = "MnuCxBj";
             this.MnuCxBj.Size = new System.Drawing.Size(160, 22);
             this.MnuCxBj.Text = "库存超限与报警";
+            // 
+            // MnuXt
+            // 
+            this.MnuXt.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MnuSzSjk,
+            this.MnuSzQx,
+            this.MnuSzKl,
+            this.MnuSzCs,
+            this.MnuSjkBf,
+            this.MnuSjkHf});
+            this.MnuXt.Name = "MnuXt";
+            this.MnuXt.Size = new System.Drawing.Size(99, 21);
+            this.MnuXt.Text = "系统管理（&S）";
             // 
             // MnuSzSjk
             // 
@@ -281,11 +278,18 @@
             this.MnuSjkHf.Size = new System.Drawing.Size(172, 22);
             this.MnuSjkHf.Text = "数据库恢复";
             // 
+            // Exit
+            // 
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(75, 21);
+            this.Exit.Text = "退出（&T）";
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // Frm_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 295);
+            this.ClientSize = new System.Drawing.Size(605, 310);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label3);

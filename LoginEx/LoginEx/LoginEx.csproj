@@ -140,6 +140,12 @@
     <EmbeddedResource Include="FrmBm.resx">
       <DependentUpon>FrmBm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhGys.resx">
+      <DependentUpon>FrmKhGys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSp.resx">
+      <DependentUpon>FrmSp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmZG.resx">
       <DependentUpon>FrmZG.cs</DependentUpon>
     </EmbeddedResource>

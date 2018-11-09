@@ -119,6 +119,15 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.t_bmTableAdapter = this.t_bmTableAdapter;
+            this.tableAdapterManager.t_csTableAdapter = null;
+            this.tableAdapterManager.t_jhdTableAdapter = null;
+            this.tableAdapterManager.t_jhmxTableAdapter = null;
+            this.tableAdapterManager.t_kcTableAdapter = null;
+            this.tableAdapterManager.t_khgysTableAdapter = null;
+            this.tableAdapterManager.t_spTableAdapter = null;
+            this.tableAdapterManager.t_xsdTableAdapter = null;
+            this.tableAdapterManager.t_xsmxTableAdapter = null;
+            this.tableAdapterManager.t_zg1TableAdapter = null;
             this.tableAdapterManager.t_zgTableAdapter = null;
             this.tableAdapterManager.t_zyTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = LoginEx.zgzyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -301,6 +310,7 @@
             this.fzrbhComboBox.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.t_bmBindingSource, "fzrbh", true));
             this.fzrbhComboBox.DataSource = this.tzgBindingSource;
             this.fzrbhComboBox.DisplayMember = "xm";
+            this.fzrbhComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.fzrbhComboBox.FormattingEnabled = true;
             this.fzrbhComboBox.Location = new System.Drawing.Point(477, 159);
             this.fzrbhComboBox.Name = "fzrbhComboBox";

@@ -46,6 +46,8 @@ namespace LoginEx
                             LoginInfo.Bh = Convert.ToString(dr["bh"]);
                             LoginInfo.Xm = Convert.ToString(dr["xm"]);
                             LoginInfo.Qx = Convert.ToString(dr["qx"]);
+                            LoginInfo.Bmbh = Convert.ToString(dr["bmbh"]);
+                            LoginInfo.Zybh = Convert.ToString(dr["zybh"]);
                                 //其他需要的
                             bResult = true;
 
